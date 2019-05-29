@@ -1,12 +1,6 @@
 html,
 body,
 .App {
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100wh;
   height: 100vh;
   background: linear-gradient(
@@ -147,44 +141,13 @@ body,
 .icons {
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  height: 100%;
 }
 
-.kick {
-  width: 4%;
-  margin: 1.5rem 9.79rem;
-  position: absolute;
+.kick, .cymbal, .clap, .snare, .hihat, .conga {
+  width: 100%;
 }
 
-.cymbal {
-  width: 5%;
-  margin: 29rem 9rem;
-  position: absolute;
-}
-
-.clap {
-  width: 5.5%;
-  margin: 14.9rem 9.45rem;
-  position: absolute;
-}
-
-.snare {
-  width: 4.1%;
-  margin: 22rem 10.1rem;
-  position: absolute;
-}
-
-.hihat {
-  width: 4.6%;
-  margin: 8.5rem 9.2rem;
-  position: absolute;
-}
-
-.conga {
-  width: 4%;
-  margin: 35.6rem 10.1rem;
-  position: absolute;
-}
 
 .recorder-buttons {
   display: grid;
@@ -196,22 +159,10 @@ body,
   grid-gap: 9px;
 }
 
-.grid {
-  width: 80vw;
-  max-width: 160vh;
-  max-height: 68vh;
-  font-size: 1rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 4rem;
-  right: 0;
-  overflow: hidden;
-  margin: auto;
-}
 .row {
   display: flex;
 }
+
 .box {
   background: white;
   border: 2px solid black;
@@ -240,4 +191,40 @@ body,
 
 #text {
   top: 50rem;
+}
+
+#intrumentImages, #knobImages{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  height: 100%
+}
+
+#intrumentImages{
+  align-items: center;
+}
+#knobImages{
+  align-items: left !important;
+}
+
+
+.whindUp {
+  width: 90% !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.ui.grid {
+  margin-top: -1rem !important;
+  margin-bottom: -1rem !important;
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+h5{
+  margin-bottom: 0 !important;
 }

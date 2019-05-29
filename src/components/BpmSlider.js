@@ -25,11 +25,11 @@ class BpmSlider extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Knob
           style={{
-            width: "80px",
-            height: "80px",
+            width: "53%",
+            height: "auto",
           }}
           onChange={value => {
             this.handleChange(value);
@@ -43,8 +43,8 @@ class BpmSlider extends React.Component {
           skin={skins.s8}
           {...this.props.rest}
         />
-        <h5 style={{marginTop: "0rem", marginLeft: "0.1rem", width: "90px"}}>Tempo (BPM)</h5>
-      </div>
+      <h5 style={{marginTop: "0rem", marginLeft: "0.1rem", width: "53%"}}>Tempo (BPM)</h5>
+      </React.Fragment>
     );
   }
 }

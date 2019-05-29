@@ -24,11 +24,12 @@ class CongaTuningKnob extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Knob
+          className="whindUp"
           style={{
-            width: "80px",
-            height: "80px",
+            width: "auto",
+            height: "auto",
           }}
           onChange={value => {
             this.handleChange(value);
@@ -41,8 +42,10 @@ class CongaTuningKnob extends React.Component {
           skin={skins.s7}
           {...this.props.rest}
         />{" "}
-        <h5 style={{marginTop: "0rem", marginLeft: "0.35rem", width: "80px"}}>Tuning (Hz)</h5>
-      </div>
+        <h5 style={{marginTop: "0rem",
+        textAlign: "center",
+        width: "87%"}}>Tuning</h5>
+      </React.Fragment>
     );
   }
 }

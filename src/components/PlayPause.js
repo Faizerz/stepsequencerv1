@@ -29,6 +29,7 @@ class PlayPause extends Component {
             border: "2px solid black",
             background: "#F7F5E1",
             borderRadius: "13px",
+            marginBottom: "1rem"
           }}
         >
           <i className={playButtonClass} />

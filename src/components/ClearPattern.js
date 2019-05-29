@@ -20,7 +20,7 @@ class ClearPattern extends Component {
 
           }}
         >
-          <i className="trash icon" />Clear Pattern
+          <i className="trash icon" />Clear All
         </button>
       </div>
     );
